@@ -3,9 +3,9 @@
 import { GitBranch, X, Link, Globe } from "lucide-react";
 
 const links = {
-  Services: ["Website Development", "E-Commerce", "SEO Optimization", "Branding", "Automation", "Maintenance"],
-  Company: ["About", "Portfolio", "Process", "Blog", "Careers"],
-  Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+  სერვისები: ["ვებსაიტის დამზადება", "ონლაინ მაღაზია", "SEO ოპტიმიზაცია", "ბრენდინგი", "ავტომატიზაცია", "მხარდაჭერა"],
+  კომპანია: ["ჩვენ შესახებ", "ნამუშევრები", "პროცესი", "ბლოგი", "კარიერა"],
+  კონტაქტი: ["კონფიდენციალობა", "მომსახურების პირობები", "Cookie პოლიტიკა"],
 };
 
 const social = [
@@ -29,11 +29,11 @@ export default function Footer() {
               <span className="text-white font-bold text-sm tracking-tight">Next-Hub</span>
             </div>
             <p className="text-sm text-white/30 leading-relaxed max-w-xs mb-6">
-              We build high-performance websites and digital systems that help businesses grow.
+              ვქმნით ვებსაიტებს, რომლებიც ბიზნესებს ზრდაში ეხმარება.
             </p>
             <div className="flex items-center gap-3">
-              {social.map(({ icon: Icon, href }) => (
-                <a key={href} href={href} className="w-8 h-8 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center hover:border-white/25 hover:bg-white/10 transition-all">
+              {social.map(({ icon: Icon, href }, idx) => (
+                <a key={idx} href={href} className="w-8 h-8 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center hover:border-white/25 hover:bg-white/10 transition-all">
                   <Icon size={13} className="text-white/50" />
                 </a>
               ))}
@@ -56,8 +56,19 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/20">© 2025 Next-Hub. All rights reserved.</p>
-          <p className="text-xs text-white/20">Built with Next.js & ♥</p>
+          <p className="text-xs text-white/20">
+            © 2026{" "}
+            <a
+              href="https://next-hub.pro/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white/50 transition-colors underline underline-offset-2"
+            >
+              Next-Hub
+            </a>
+            . ყველა უფლება დაცულია.
+          </p>
+          <p className="text-xs text-white/20">შექმნილია Next.js-ით & ♥</p>
         </div>
       </div>
     </footer>

@@ -19,8 +19,8 @@ export default function Contact() {
       <div className="max-w-2xl mx-auto">
         <SectionTitle
           eyebrow="კონტაქტი"
-          title="დაგვიკავშირდით"
-          subtitle="მოგვიყევით თქვენს პროექტზე და 24 საათში გიპასუხებთ."
+          title="მოგვიყევით თქვენი პროექტის შესახებ"
+          subtitle="შეავსეთ ფორმა და 24 საათში გიპასუხებთ."
         />
 
         <motion.div
@@ -81,7 +81,7 @@ export default function Contact() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-semibold text-white/40 mb-2 uppercase tracking-wider">პროექტის დეტალები</label>
+                <label className="block text-xs font-semibold text-white/40 mb-2 uppercase tracking-wider">შეტყობინება</label>
                 <textarea
                   required
                   rows={4}
